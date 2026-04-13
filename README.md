@@ -1,6 +1,3 @@
-# movie-recommendation-system
-Content-based movie recommendation system using Python, TF-IDF vectorization, and cosine similarity.
-
 ---
 
 # 🎬 Movie Recommendation System
@@ -111,9 +108,8 @@ Possible upgrades for this project:
 * Use larger datasets
 
 
-Your Name
+Aatman Sabhaya
+(Applied AI Student)
 Machine Learning Enthusiast | Python Developer
 
 ---
-
-If you tell me your **GitHub username**, I’ll customize the clone link and author section so it’s ready to paste directly.
