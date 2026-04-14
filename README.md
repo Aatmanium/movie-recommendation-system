@@ -1,12 +1,12 @@
 ---
 
-# 🎬 Movie Recommendation System
+#  Movie Recommendation System
 
 This project is a **content-based movie recommendation system** built using **Python and machine learning techniques**. It recommends movies similar to a selected title based on features such as **genres, keywords, cast, tagline, and director** using **TF-IDF vectorization** and **cosine similarity**.
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 Recommendation systems are widely used in platforms like Netflix and Amazon.
 This project demonstrates how to build a **content-based filtering model** that suggests similar movies by analyzing textual metadata from a dataset.
@@ -15,7 +15,7 @@ The system takes a movie name as input and returns a list of similar movies.
 
 ---
 
-# ⚙️ Technologies Used
+#  Technologies Used
 
 * Python
 * NumPy
@@ -27,7 +27,7 @@ The system takes a movie name as input and returns a list of similar movies.
 
 ---
 
-# 📂 Dataset
+#  Dataset
 
 The dataset contains movie metadata including:
 
@@ -41,7 +41,7 @@ These features are combined into one text column and transformed into numerical 
 
 ---
 
-# 🧠 How the Model Works
+#  How the Model Works
 
 The recommendation pipeline follows these steps:
 
@@ -55,7 +55,7 @@ The recommendation pipeline follows these steps:
 
 ---
 
-# ▶️ Example
+#  Example
 
 **Input:**
 
@@ -75,7 +75,7 @@ Jupiter Ascending
 
 ---
 
-# 🚀 How to Run the Project
+#  How to Run the Project
 
 Clone the repository:
 
@@ -97,7 +97,7 @@ jupyter notebook movie_recommendation_system.ipynb
 
 ---
 
-# 📈 Future Improvements
+#  Future Improvements
 
 Possible upgrades for this project:
 
@@ -108,8 +108,8 @@ Possible upgrades for this project:
 * Use larger datasets
 
 
-Aatman Sabhaya
-(Applied AI Student)
+Aatman Sabhaya<br>
+(Applied AI Student)<br>
 Machine Learning Enthusiast | Python Developer
 
 ---
