@@ -1,115 +1,100 @@
----
+# Movie Recommendation System
 
-#  Movie Recommendation System
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Recommendation-orange)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-This project is a **content-based movie recommendation system** built using **Python and machine learning techniques**. It recommends movies similar to a selected title based on features such as **genres, keywords, cast, tagline, and director** using **TF-IDF vectorization** and **cosine similarity**.
+A content-based movie recommendation system that suggests similar movies from metadata such as genres, keywords, tagline, cast, and director.
 
----
+## Project Highlights
 
-#  Project Overview
+- Built a content-based recommendation pipeline using movie metadata.
+- Combined multiple text features into one model-ready representation.
+- Applied TF-IDF vectorization to convert metadata into numerical vectors.
+- Used cosine similarity to rank movies by closeness to a selected title.
+- Added both notebook exploration and a reusable command-line script.
 
-Recommendation systems are widely used in platforms like Netflix and Amazon.
-This project demonstrates how to build a **content-based filtering model** that suggests similar movies by analyzing textual metadata from a dataset.
+## Tech Stack
 
-The system takes a movie name as input and returns a list of similar movies.
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- TF-IDF Vectorizer
+- Cosine Similarity
+- Jupyter Notebook
 
----
+## Project Structure
 
-#  Technologies Used
-
-* Python
-* NumPy
-* Pandas
-* Scikit-learn
-* TF-IDF Vectorizer
-* Cosine Similarity
-* Jupyter Notebook
-
----
-
-#  Dataset
-
-The dataset contains movie metadata including:
-
-* Genres
-* Keywords
-* Tagline
-* Cast
-* Director
-
-These features are combined into one text column and transformed into numerical vectors for similarity comparison.
-
----
-
-#  How the Model Works
-
-The recommendation pipeline follows these steps:
-
-1. Load movie dataset
-2. Select relevant features
-3. Handle missing values
-4. Combine selected features into one text column
-5. Convert text into vectors using **TF-IDF**
-6. Compute similarity scores using **cosine similarity**
-7. Recommend top similar movies based on user input
-
----
-
-#  Example
-
-**Input:**
-
-```
-Avatar
+```text
+movie-recommendation-system/
+|-- data/
+|   `-- movies.csv
+|-- notebooks/
+|   `-- movie_recommendation_system.ipynb
+|-- src/
+|   `-- recommend.py
+|-- requirements.txt
+`-- README.md
 ```
 
-**Recommended movies:**
-
-```
-Guardians of the Galaxy
-John Carter
-Star Trek
-The Avengers
-Jupiter Ascending
-```
-
----
-
-#  How to Run the Project
+## Getting Started
 
 Clone the repository:
 
-```
-git clone https://github.com/your-username/movie-recommendation-system.git
+```bash
+git clone https://github.com/Aatmanium/movie-recommendation-system.git
+cd movie-recommendation-system
 ```
 
 Install dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-Run the notebook:
+Run recommendations from the command line:
 
+```bash
+python src/recommend.py "Avatar"
 ```
-jupyter notebook movie_recommendation_system.ipynb
+
+Open the notebook:
+
+```bash
+jupyter notebook notebooks/movie_recommendation_system.ipynb
 ```
 
----
+## How It Works
 
-#  Future Improvements
+1. Load movie metadata from `data/movies.csv`.
+2. Select recommendation features: genres, keywords, tagline, cast, and director.
+3. Replace missing values with empty strings.
+4. Combine selected features into a single text field.
+5. Convert text into TF-IDF vectors.
+6. Compute cosine similarity between movies.
+7. Return the closest movie matches for a user-provided title.
 
-Possible upgrades for this project:
+## Example Output
 
-* Add Streamlit web interface
-* Deploy the model online
-* Improve recommendation accuracy
-* Add hybrid recommendation system
-* Use larger datasets
+```text
+Recommendations for: Avatar
 
+1. Alien
+2. Aliens
+3. Guardians of the Galaxy
+4. Star Trek Beyond
+5. Star Trek Into Darkness
+```
 
-Aatman Sabhaya<br>
-(Applied AI Student)<br>
-Machine Learning Enthusiast | Python Developer
+## Future Improvements
 
----
+- Build a Streamlit interface for interactive recommendations.
+- Add posters and metadata cards for better user experience.
+- Evaluate recommendations with user feedback or click data.
+- Extend the model into a hybrid recommender with ratings data.
+
+## Author
+
+**Aatmanium**  
+Applied AI Student | Machine Learning Enthusiast | Python Developer
